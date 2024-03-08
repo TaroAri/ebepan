@@ -1841,6 +1841,10 @@ span {
   }
 
 
+  .park-first-view {
+    height: 90vh;
+  }
+  
   .park-first-view-mask {
     height: 20vw;
   }
