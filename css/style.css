@@ -1998,6 +1998,10 @@ span {
 }
 
 @media screen and (max-width:100vh) {
+  .park-first-view {
+    height: 95vh;
+  }
+
   .park-first-view-mask {
     left: -10vw;
     width: 250vw;
