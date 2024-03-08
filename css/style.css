@@ -1999,7 +1999,7 @@ span {
 
 @media screen and (max-width:100vh) {
   .park-first-view {
-    height: 95vh;
+    height: 90vh;
   }
 
   .park-first-view-mask {
