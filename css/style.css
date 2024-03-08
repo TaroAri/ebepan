@@ -446,7 +446,8 @@ span {
   padding: 0.1vw 0.4vw 0.1vw;
 }
 
-.bakery-list-ebetsu .hashtag p {
+.bakery-list-ebetsu .hashtag p,
+#popup .hashtag p {
   border: 1px solid #EB6951;
   color: #EB6951;
 }
@@ -543,15 +544,13 @@ span {
 
 
 /*========================================*/
-.popup {
+.popup1 {
   display: none;
   position: absolute;
-  top: 15%;
-  left: 68.4%;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 10px;
-  z-index: 100;
+  top: 5%;
+  right: 35%;
+  border: #EB6951 5px solid;
+  z-index: 10;
 }
 /*=======================================*/
 .map-bakery1 {
