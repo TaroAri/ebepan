@@ -135,7 +135,7 @@ span {
 }
 
 .title p {
-  font-size: 1.6vw;
+  font-size: clamp(12px, 2vw, 32px);
 }
 
 /*  footer  */
@@ -315,7 +315,7 @@ span {
   font-family: "craftmincho";
   font-size: clamp(20px, 5vw, 70px);
   font-weight: 600;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
 .about-textarea {
@@ -327,12 +327,11 @@ span {
 
 .about-textarea-under {
   width: 70vw;
-  z-index: 10;
 }
 
 .french-bread {
   position: relative;
-  margin: 8vw 0 10vw;
+  margin: 8vw 0 20vw;
   background-image: url(../img/line.png);
   background-position: right;
   background-size: contain;
@@ -419,10 +418,9 @@ span {
 }
 
 .bakery img {
-  margin-top: 15px;
+  margin-top: 0.8vw;
   width: 90%;
-  height: 22vw;
-  max-height: 150px;
+  height: auto;
 }
 
 .bakery h3 {
@@ -1862,6 +1860,10 @@ span {
     transition: .3s;
   }
 
+  .bakery img {
+    margin-top: 1vw;
+  }
+
 
   #near-bakery {
     width: 120vw;
@@ -1928,6 +1930,9 @@ span {
 }
 
 @media screen and (max-width:600px) {
+  .about h2 {
+    margin-bottom: 10vw;
+  }
   .french-bread {
     width: 150vw;
     height: 3.6vw;
@@ -1954,6 +1959,10 @@ span {
     width: 38vw;
     height: 51vw;
     transition: .3s;
+  }
+
+  .bakery img {
+    margin-top: 2vw;
   }
 
 
