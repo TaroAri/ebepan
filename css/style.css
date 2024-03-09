@@ -243,6 +243,7 @@ span {
 /*  first-view  */
 .first-view {
   width: 100vw;
+  height: 90vh;
   background-image: url(../img/renga.JPG);
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,13 +253,21 @@ span {
 }
 
 .first-view-inner {
+  position: relative;
   margin: 7vw auto 0;
   padding-bottom: 50px;
 }
 
 .first-view-inner img {
-  width: 86vw;
+  width: 95vw;
+  max-width: 1660px;
   height: auto;
+}
+
+.first-view-inner h1 {
+  position: absolute;
+  bottom: 17%;
+  left: 20%;
 }
 /*
 .first-view-inner {
@@ -431,7 +440,7 @@ span {
 
 .hashtag {
   position: absolute;
-  bottom: 10px;
+  bottom: 0.5vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -443,7 +452,7 @@ span {
   border-radius: 2.5vw;
   background: #FFF;
   font-size: clamp(10px, 2vw, 18px);
-  padding: 0.1vw 0.4vw 0.1vw;
+  padding: 0.2vw 0.4vw 0.1vw;
 }
 
 .bakery-list-ebetsu .hashtag p,
@@ -477,12 +486,15 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  min-width: 881px;
   height: 48vw;
-  min-height: 428px;
-  overflow: scroll;
   margin-bottom: 300px;
 }
+
+/* .map-area {
+  min-width: 881px;
+  min-height: 428px;
+  overflow: scroll;
+} */
 
 .map-pin {
   position: absolute;
@@ -493,105 +505,21 @@ span {
   width: 2vw;
 }
 
-/*========================================*/
-#popup {
-  display: none; /* label でコントロールするので input は非表示に */
-}
-
-.popup-open {
-  cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
-}
-
-.popup-overlay {
-  display: none; /* input にチェックが入るまでは非表示に */
-}
-
-#popup:checked ~ .popup-overlay {
+.map-bakery1:hover ~ .popup {
   display: block;
-  z-index: 99999;
-  background-color: #00000070;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
 }
 
-.popup-window {
-  width: 90vw;
-  max-width: 560px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.popup-text {
-  margin: 0;
-}
-
-.popup-text:not(:last-of-type) {
-  margin-bottom: 1em
-}
-
-.popup-close {
-  cursor: pointer;
-  position: absolute;
-  top: -26px;
-  right: 0;
-}
-/*=========================================*/
-
-
-/*========================================*/
-.popup1 {
+.popup {
   display: none;
   position: absolute;
   top: 5%;
   right: 35%;
+  height: 35vw;
   border: #EB6951 5px solid;
+  background-color: #FFFAF0;
   z-index: 10;
 }
 
-.det {
-  margin-top: 100px;
-}
-.det p {
-  position: relative;
-  font-size: 18px;
-}
-
-.det p:before,
-.det p:after {
-  position: absolute;
-  top: 120%;
-  right: 0;
-  height: 1px;
-  background: #3B302A;
-  content: '';
-  transition: all .3s;
-}
-
-.det p:before {
-  width: 100%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-}
-
-
-.det p:after {
-  width: 8%;
-  transform: translateY(-50%) rotate(-30deg);
-  transform-origin: right center;
-  -webkit-transform: translateY(-50%) rotate(-30deg);
-  -webkit-transform-origin: right center;
-  -moz-transform: translateY(-50%) rotate(-30deg);
-  -moz-transform-origin: right center;
-}
 
 /*=======================================*/
 .map-bakery1 {
@@ -783,11 +711,13 @@ span {
   max-width: 260px;
   max-height: 345px;
   border:0.4vw solid #539B56;
+  background-color: #FFFAF0;
   transition: .3s;
 }
 
 .park:hover {
   transform: scale(1.1);
+  z-index: 1;
 }
 
 .park img {
@@ -811,6 +741,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 1.5vw;
+  width: 31vw;
   margin: 4vw auto;
 }
 
@@ -958,6 +889,10 @@ span {
 
 .near-bakery-name h3:hover {
   transform: scale(1.1);
+}
+
+.near-bakery-box p:hover ~ .arrow-wp {
+  background-image: url(../img/park20_arrow_reverse.png);
 }
 
 /*-------------------------------------------------------------------
@@ -1405,7 +1340,15 @@ span {
 }
 
 .bakery-info-text-ebetsu:hover {
-  color: #fdaa9a;
+  color: #EB6951;
+}
+
+.bakery-info-nopporo .bakery-info-text-ebetsu:hover {
+  color: #F6B044;
+}
+
+.bakery-info-oasa .bakery-info-text-ebetsu:hover {
+  color: #9DBDB9;
 }
 
 .bakery-border {
@@ -1793,10 +1736,14 @@ span {
   margin-top: 2vw;
 }
 
-.park-other-area h1 {
+.park-other-area h2 {
   font-family: "craftmincho";
   font-size: 3vw;
   margin-top: 5vw;
+}
+
+.ebetsu-park20:hover .arrow-wp {
+  background-image: url(../img/park20_arrow_reverse.png);
 }
 
 

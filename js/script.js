@@ -13,15 +13,6 @@ window.addEventListener('scroll', () => {
 
 
 
-function showPopup() {
-  document.getElementById('popup').style.display = 'block';
-}
-function hidePopup() {
-  document.getElementById('popup').style.display = 'none';
-}
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.querySelector('.openbtn');
   const headNav = document.querySelector('#js-nav');
