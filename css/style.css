@@ -242,33 +242,44 @@ span {
 
 /*  first-view  */
 .first-view {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 90vh;
+  min-height: 700px;
   background-image: url(../img/renga.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  margin-bottom: 125px;
+  margin-bottom: 6.5vw;
 }
 
 .first-view-inner {
   position: relative;
-  margin: 7vw auto 0;
-  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
-.first-view-inner img {
+.first-view-img {
   width: 95vw;
   max-width: 1660px;
   height: auto;
 }
 
+.first-view-img-resp {
+  display: none;
+}
+
 .first-view-inner h1 {
   position: absolute;
-  bottom: 17%;
-  left: 20%;
+  bottom: 30%;
+  left: 17%;
+  font-family: "craftmincho";
+  font-size: 2.1vw;
+  color: #875C4E;
 }
+
 /*
 .first-view-inner {
   position: relative;
@@ -2081,12 +2092,32 @@ span {
   .park-inf-area-inner {
     width: 100vw;
   }
-
-
   
 }
 
 @media screen and (max-width:100vh) {
+  .first-view-inner {
+    background-color: #FFFAF0;
+    height: 100%;
+    border-radius: 100px 100px 0 0 ;
+    margin-top: 7vw;
+  }
+
+  .first-view-img {
+   display: none;
+  }
+  
+  .first-view-img-resp {
+    display: inline;
+    height: 90%;
+  }
+  
+  .first-view-inner h1 {
+    position: static;
+    font-size: 3vw;
+    margin-top: 1vw;
+  }
+
   .park-first-view {
     height: 90vh;
   }
@@ -2102,6 +2133,31 @@ span {
     margin-top: 10vw;
   }
   
+}
+
+@media screen and (max-width:430px) {
+  .first-view-inner {
+    height: auto;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .first-view-img {
+   display: none;
+  }
+  
+  .first-view-img-resp {
+    display: inline;
+    width: 100%;
+    height: auto;
+  }
+  
+  .first-view-inner h1 {
+    position: static;
+    font-size: 6vw;
+    margin-top: 1vw;
+    padding-bottom: 3vw;
+  }
 }
 
 
