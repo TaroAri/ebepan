@@ -280,51 +280,22 @@ span {
   color: #875C4E;
 }
 
-/*
-.first-view-inner {
-  position: relative;
-  width: 87vw;
-  height: 80vh;
-  background-image: url(../img/first_view_breads.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.first-view-center {
   background-position: center;
-  background-color: #FFFAF0;
-  border-radius: 18vw 18vw 0 0;
-  margin: 120px auto 0;
 }
 
-.first-view-title {
-  position: absolute;
-  top: 30%;
-  left: 12%;
-  font-family: "craftmincho";
-  color: #875C4E;
+.first-view-right {
+  background-position: right;
 }
 
-.first-view-title img {
-  width: 32vw;
-  height: auto;
+.first-view-left {
+  background-position: left;
 }
 
-.first-view-title h1 {
-  font-size: 3vw;
-  margin-top: 10px;
+.first-view-bottom {
+  background-position: bottom;
 }
 
-.first-view-title h2 {
-  font-size: 2.5vw;
-  margin-top: 10px;
-}
-
-.ebechun {
-  position: absolute;
-  top: 8%;
-  right: 12%;
-  width: 30vw;
-  max-width: 490px;
-}
-*/
 /*  about  */
 .about {
   width: 75vw;
@@ -451,7 +422,7 @@ span {
 
 .hashtag {
   position: absolute;
-  bottom: 2vw;
+  bottom: 1vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -900,7 +871,7 @@ span {
 }
 
 .park h3 {
-  font-size: clamp(14px, 2vw, 26px);
+  font-size: clamp(14px, 3vw, 26px);
   font-weight: 400;
   margin-top: 1.5vw;
 }
@@ -1161,8 +1132,8 @@ span {
 }
 
 #bakery-first-view {
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -1424,35 +1395,35 @@ span {
 }
 
 .nopporo-interview-odd {
-  background-color: rgba(242, 197, 129, 1);
+  background-color: #f2c581;
 }
 
 .nopporo-border-odd .bakery-interview-flex {
-  border: rgba(242, 197, 129, 1) 2px solid;
+  border: #f2c581 2px solid;
 }
 
 .nopporo-interview-even {
-  background-color: rgba(242, 197, 129, 0.5);
+  background-color: #FFE5BD;
 }
 
 .nopporo-border-even .bakery-interview-flex {
-  border: rgba(242, 197, 129, 0.5) 2px solid;
+  border: #FFE5BD 2px solid;
 }
 
 .oasa-interview-odd {
-  background-color: rgba(188, 212, 195, 1);
+  background-color: #bcd4c3;
 }
 
 .oasa-border-odd .bakery-interview-flex {
-  border: rgba(188, 212, 195, 1) 2px solid;
+  border: #bcd4c3 2px solid;
 }
 
 .oasa-interview-even {
-  background-color: rgba(188, 212, 195, 0.5);
+  background-color: #DBE7DE;
 }
 
 .oasa-border-even .bakery-interview-flex {
-  border: rgba(188, 212, 195, 0.5) 2px solid;
+  border: #DBE7DE 2px solid;
 }
 
 /*  ebechun-mic  */
@@ -1517,11 +1488,11 @@ span {
   color: #EB6951;
 }
 
-.bakery-info-nopporo .bakery-info-text-ebetsu:hover {
+.bakery-info-text-nopporo:hover {
   color: #F6B044;
 }
 
-.bakery-info-oasa .bakery-info-text-ebetsu:hover {
+.bakery-info-text-oasa:hover {
   color: #9DBDB9;
 }
 
