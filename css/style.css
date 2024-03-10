@@ -451,7 +451,7 @@ span {
 
 .hashtag {
   position: absolute;
-  bottom: 0.5vw;
+  bottom: 2vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -478,8 +478,8 @@ span {
   color: #F6B044;
 }
 
-.bakery-list-oasa .hashtag p
-.popup-nopporo .hashtag p {
+.bakery-list-oasa .hashtag p,
+.popup-oasa .hashtag p {
   border: 1px solid #9DBDB9;
   color: #9DBDB9;
 }
@@ -494,6 +494,7 @@ span {
 /*  bakery-map  */
 .map-container {
   width: 100vw;
+  margin-bottom: 15vw;
   overflow-x: scroll;
 }
 .map-area {
@@ -527,10 +528,23 @@ span {
 
 .popup-layer {
   position: relative;
-  width: 25vw;
-  height: 35vw;
+  width: 15vw;
+  min-width: 150px;
+  height: 21vw;
+  min-height: 210px;
   background-color: #FFFAF0;
+}
+
+.popup-ebetsu .popup-layer {
   border: #EB6951 0.3vw solid;
+}
+
+.popup-nopporo .popup-layer {
+  border: #F6B044 0.3vw solid;
+}
+
+.popup-oasa .popup-layer {
+  border: #9DBDB9 0.3vw solid;
 }
 
 .popup img {
@@ -539,13 +553,13 @@ span {
 }
 
 .popup h3 {
-  font-size: 2.5vw;
+  font-size: clamp(15px, 1.4vw, 30px);
   margin-top: 1.5vw;
   margin-bottom: 0.5vw;
 }
 
 .popup-layer .hashtag p {
-  font-size: 1.5vw;
+  font-size: clamp(10px, 1vw, 50px);
 }
 
 .sp-popup a,
@@ -585,6 +599,10 @@ span {
   display: none;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 70%;
   height: 10%;
   background-color: #3E332D;
@@ -637,18 +655,33 @@ span {
 }
 
 .map-bakery5 {
-  top: 6.7%;
-  left: 60.58%;
+  top: 10%;
+  left: 60.75%;
+}
+
+.popup5 {
+  top: 10%;
+  right: 45%;
 }
 
 .map-bakery6 {
-  top: 7.2%;
-  left: 58.45%;
+  top: 10%;
+  left: 58.9%;
+}
+
+.popup6 {
+  top: 9.9%;
+  right: 47%;
 }
 
 .map-bakery7 {
-  top: 42.3%;
-  left: 42.75%;
+  top: 38.7%;
+  left: 45.6%;
+}
+
+.popup7 {
+  top: 20%;
+  left: 15%;
 }
 
 .map-bakery8 {
@@ -656,34 +689,69 @@ span {
   left: 45.44%;
 }
 
+.popup8 {
+  top: 10%;
+  left: 15%;
+}
+
 .map-bakery9 {
-  top: 41.1%;
-  left: 38.9%;
+  top: 38%;
+  left: 40.7%;
+}
+
+.popup9 {
+  top: 10%;
+  left: 15%;
 }
 
 .map-bakery10 {
-  top: 87.5%;
-  left: 40.15%;
+  top: 84.8%;
+  left: 43.4%;
+}
+
+.popup10 {
+  bottom: 0;
+  left: 15%;
 }
 
 .map-bakery11 {
-  top: 34.5%;
-  left: 52.1%;
+  top: 31.1%;
+  left: 52.23%;
+}
+
+.popup11 {
+  top: 10%;
+  left: 25%;
 }
 
 .map-bakery12 {
-  top: 21.6%;
-  left: 52%;
+  top: 15.3%;
+  left: 50.3%;
+}
+
+.popup12 {
+  top: 10%;
+  left: 25%;
 }
 
 .map-bakery13 {
-  top: 38%;
-  left: 44.1%;
+  top: 34.8%;
+  left: 46.28%;
+}
+
+.popup13 {
+  top: 10%;
+  left: 20%;
 }
 
 .map-bakery14 {
-  top: 42.5%;
-  left: 44.55%;
+  top: 41.3%;
+  left: 46.68%;
+}
+
+.popup14 {
+  top: 10%;
+  left: 20%;
 }
 
 .map-bakery15 {
@@ -691,24 +759,49 @@ span {
   left: 51.3%;
 }
 
+.popup15 {
+  top: 0;
+  left: 20%;
+}
+
 .map-bakery16 {
-  top: 23.3%;
-  left: 11.55%;
+  top: 20.8%;
+  left: 12.83%;
+}
+
+.popup16 {
+  top: 10%;
+  left: 25%;
 }
 
 .map-bakery17 {
-  top: 24.6%;
-  left: 23.35%;
+  top: 29.7%;
+  left: 24.14%;
+}
+
+.popup17 {
+  top: 10%;
+  left: 30%;
 }
 
 .map-bakery18 {
-  top: 26.5%;
+  top: 26.6%;
   left: 7.89%;
 }
 
+.popup18 {
+  top: 10%;
+  left: 20%;
+}
+
 .map-bakery19 {
-  top: 14.6%;
-  left: 26.74%;
+  top: 17.8%;
+  left: 26.73%;
+}
+
+.popup19 {
+  top: 10%;
+  left: 35%;
 }
 
 .map-bakery-small img {
@@ -2194,33 +2287,47 @@ span {
     height: 90vw;
     max-height: 550px;
     background-color: #FFFAF0;
-    border: #EB6951 0.3vw solid;
+  }
+
+  .popup-ebetsu .popup-layer {
+    border: #EB6951 1vw solid;
   }
   
+  .popup-nopporo .popup-layer {
+    border: #F6B044 1vw solid;
+  }
+  
+  .popup-oasa .popup-layer {
+    border: #9DBDB9 1vw solid;
+  }
+  
+  
   .sp-popup img {
-    margin-top: 2.5vw;
+    margin-top: 3vw;
   }
   
   .sp-popup h3 {
-    font-size: 5.5vw;
+    font-size: clamp(10px, 6vw, 50px);
+    margin-top: 5vw;
   }
   
   .sp-popup .hashtag p {
-    font-size: 3.5vw;
+    font-size: clamp(10px, 4vw, 30px);
+    bottom: 2vw;
   }
   
   .close-button {
-    top: -0.7vw;
-    right: -0.5vw;
-    font-size: 1.5vw;
-    width: 5vw;
-    height: 5vw;
+    top: -2vw;
+    right: -2vw;
+    font-size: 4vw;
+    width: 8vw;
+    height: 8vw;
   }
   
   .detail-button {
-    font-size: 3vw;
+    font-size: clamp(10px, 3vw, 30px);
     padding: 0.5vw 1vw;
-    margin: 5vw auto 0;
+    margin: 0 auto 5vw;
   }
 
   .park-first-view {
