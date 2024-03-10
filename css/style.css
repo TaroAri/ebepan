@@ -581,7 +581,7 @@ span {
 }
 
 .sp-popup a {
-  display: flex;
+  display: inline-block;
 }
 
 

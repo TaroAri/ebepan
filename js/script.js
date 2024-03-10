@@ -1,45 +1,46 @@
-window.onload = function() {
-  var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-  // スマートフォンの場合の動作
-  if (isMobileDevice) {
-      var mapPins = document.getElementsByClassName('map-pin');
-      for (var i = 0; i < mapPins.length; i++) {
-          var mapPin = mapPins[i];
-          mapPin.href = "javascript:void(0)";
+  window.onload = function() {
+    var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-          var popup = mapPin.nextElementSibling;
-          popup.classList.add('sp-popup');
+    // スマートフォンの場合の動作
+    if (isMobileDevice) {
+        var mapPins = document.getElementsByClassName('map-pin');
+        for (var i = 0; i < mapPins.length; i++) {
+            var mapPin = mapPins[i];
+            mapPin.href = "javascript:void(0)";
 
-          mapPin.addEventListener('click', function() {
-              var popup = this.nextElementSibling;
-              popup.style.display = 'block';
-          });
+            var popup = mapPin.nextElementSibling;
+            popup.classList.add('sp-popup');
 
-          var closeButtons = popup.getElementsByClassName('close-button');
-          for (var j = 0; j < closeButtons.length; j++) {
-              var closeButton = closeButtons[j];
-              closeButton.addEventListener('click', function() {
-                  var popup = this.parentElement;
-                  popup.style.display = 'none';
-              });
-          }
-      }
-  } else { // スマートフォンでない場合の動作
-      var mapPins = document.getElementsByClassName('map-pin');
-      for (var i = 0; i < mapPins.length; i++) {
-          var mapPin = mapPins[i];
-          mapPin.addEventListener('mouseover', function() {
-              var popup = this.nextElementSibling;
-              popup.style.display = 'block';
-          });
+            mapPin.addEventListener('click', function() {
+                var popup = this.nextElementSibling;
+                popup.style.display = 'block';
+            });
 
-          mapPin.addEventListener('mouseout', function() {
-              var popup = this.nextElementSibling;
-              popup.style.display = 'none';
-          });
-      }
-  }
+            var closeButtons = popup.getElementsByClassName('close-button');
+            for (var j = 0; j < closeButtons.length; j++) {
+                var closeButton = closeButtons[j];
+                closeButton.addEventListener('click', function() {
+                    var popup = this.parentElement.parentElement;
+                    popup.style.display = 'none';
+                });
+            }
+        }
+    } else { // スマートフォンでない場合の動作
+        var mapPins = document.getElementsByClassName('map-pin');
+        for (var i = 0; i < mapPins.length; i++) {
+            var mapPin = mapPins[i];
+            mapPin.addEventListener('mouseover', function() {
+                var popup = this.nextElementSibling;
+                popup.style.display = 'block';
+            });
+
+            mapPin.addEventListener('mouseout', function() {
+                var popup = this.nextElementSibling;
+                popup.style.display = 'none';
+            });
+        }
+    }
 }
 
 
