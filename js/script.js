@@ -14,7 +14,7 @@
 
             mapPin.addEventListener('click', function() {
                 var popup = this.nextElementSibling;
-                popup.style.display = 'block';
+                popup.style.display = 'flex';
             });
 
             var closeButtons = popup.getElementsByClassName('close-button');
@@ -32,7 +32,7 @@
             var mapPin = mapPins[i];
             mapPin.addEventListener('mouseover', function() {
                 var popup = this.nextElementSibling;
-                popup.style.display = 'block';
+                popup.style.display = 'flex';
             });
 
             mapPin.addEventListener('mouseout', function() {
