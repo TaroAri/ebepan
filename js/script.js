@@ -1,15 +1,15 @@
+//端末を判定
+window.onload = function() {
+  var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-  window.onload = function() {
-    var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   // スマートフォンの場合の動作
+  if (isMobileDevice) {
+      var mapPins = document.getElementsByClassName('map-pin');
+      for (var i = 0; i < mapPins.length; i++) {
+           var mapPin = mapPins[i];
+           mapPin.href = "javascript:void(0)";
 
-    // スマートフォンの場合の動作
-    if (isMobileDevice) {
-        var mapPins = document.getElementsByClassName('map-pin');
-        for (var i = 0; i < mapPins.length; i++) {
-            var mapPin = mapPins[i];
-            mapPin.href = "javascript:void(0)";
-
-            var popup = mapPin.nextElementSibling;
+           var popup = mapPin.nextElementSibling;
             popup.classList.add('sp-popup');
 
             mapPin.addEventListener('click', function() {
@@ -18,14 +18,14 @@
             });
 
             var closeButtons = popup.getElementsByClassName('close-button');
-            for (var j = 0; j < closeButtons.length; j++) {
+          for (var j = 0; j < closeButtons.length; j++) {
                 var closeButton = closeButtons[j];
                 closeButton.addEventListener('click', function() {
                     var popup = this.parentElement.parentElement;
                     popup.style.display = 'none';
                 });
-            }
-        }
+           }
+       }
     } else { // スマートフォンでない場合の動作
         var mapPins = document.getElementsByClassName('map-pin');
         for (var i = 0; i < mapPins.length; i++) {
@@ -44,6 +44,7 @@
 }
 
 
+//フェードイン
 let fadeInTarget = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
   for (let i = 0; i < fadeInTarget.length; i++) {
@@ -58,7 +59,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-
+//ハンバーガーメニュー
 document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.querySelector('.openbtn');
   const headNav = document.querySelector('#js-nav');
@@ -85,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
+//ギャラリーモーダル
 $(".gallery").modaal({
  	type: 'image',
  	overlay_close:true,//モーダル背景クリック時に閉じるか
