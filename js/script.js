@@ -1,6 +1,7 @@
 //端末を判定
 window.onload = function() {
-  var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Macintosh/i.test(navigator.userAgent) 
+                       && 'ontouchend' in document;
 
    // スマートフォンの場合の動作
   if (isMobileDevice) {
