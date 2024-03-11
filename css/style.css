@@ -274,7 +274,7 @@ span {
 .first-view-inner h1 {
   position: absolute;
   bottom: 30%;
-  left: 17%;
+  left: 18.5%;
   font-family: "craftmincho";
   font-size: 2.1vw;
   color: #875C4E;
@@ -901,7 +901,7 @@ span {
   width: 4vw;
   height: 4vw;
   background-image: url(../img/park20_arrow.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: .3s;
 }
@@ -910,7 +910,7 @@ span {
   width: 4vw;
   height: 4vw;
   background-image: url(../img/park20_arrow_reverse.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -2230,7 +2230,8 @@ span {
 @media screen and (max-width:100vh) {
   .first-view-inner {
     background-color: #FFFAF0;
-    height: 100%;
+    width: 95vw;
+    max-width: 435px;
     border-radius: 100px 100px 0 0;
     margin-top: 7vw;
   }
@@ -2241,14 +2242,15 @@ span {
   
   .first-view-img-resp {
     display: inline;
-    height: 90%;
+    width: 100%;
     border-radius: 100px 100px 0 0;
   }
   
   .first-view-inner h1 {
     position: static;
-    font-size: 3vw;
+    font-size: clamp(24px, 3vw, 90px);
     margin-top: 1vw;
+    padding-bottom: 3vw;
   }
 
   .sp-popup .popup-layer {
@@ -2318,9 +2320,10 @@ span {
   
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:450px) {
   .first-view-inner {
     width: 100vw;
+    max-width: none;
     height: auto;
     border-radius: 0;
     margin-top: 0;
