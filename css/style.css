@@ -1606,8 +1606,8 @@ span {
   transform: scale(1.2);
 } */
 
-.near-park-name p:before,
-.near-park-name p:after {
+.near-park-name p::before,
+.near-park-name p::after {
   display: block;
   position: absolute;
   top: 120%;
@@ -1619,7 +1619,7 @@ span {
   content: 'hello';
 }
 
-.near-park-name p:before {
+.near-park-name p::before {
   width: 100%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1627,7 +1627,7 @@ span {
 }
 
 
-.near-park-name p:after {
+.near-park-name p::after {
   width: 8%;
   transform: translateY(-50%) rotate(-30deg);
   transform-origin: right center;
