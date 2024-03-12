@@ -1591,6 +1591,7 @@ span {
 
 .near-park-name p:before,
 .near-park-name p:after {
+  display: block;
   position: absolute;
   top: 120%;
   right: 0;
