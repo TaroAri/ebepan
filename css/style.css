@@ -1617,6 +1617,7 @@ span {
   height: 5px;
   background-color: #3B302A;
   content: 'hello';
+  transition: all .3s;
 }
 
 .near-park-name p::before {
@@ -1639,14 +1640,14 @@ span {
 
 
 
-.near-park-name p:hover::before {
+/* .near-park-name p:hover::before {
   width: 120%;
   right: -10%;
 }
 
 .near-park-name p:hover::after {
   right: -10%;
-}
+} */
 
 
 
