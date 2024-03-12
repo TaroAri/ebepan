@@ -2213,11 +2213,6 @@ span {
     margin: 5vw auto;
   }
 
-  .near-park-name p:before,
-  .near-park-name p:after {
-    height: 0.1px;
-  }
-
   .modaal-close {
     right: -15px;
   }
