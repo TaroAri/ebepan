@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   headNav.addEventListener('click', () => {
     hamburger.classList.remove('active');
-    hamburger.querySelector('.hamburger-text').textContent = '';
+    hamburger.querySelector('.hamburger-text').textContent = 'menu';
     headNav.classList.remove('active')
   });
 

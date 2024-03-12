@@ -498,11 +498,18 @@ span {
 }
 
 .popup-layer {
-  position: relative;
+  position: absolute;
   width: 15vw;
   min-width: 150px;
   height: 21vw;
   min-height: 210px;
+  background-color: #FFFAF0;
+}
+
+.sp-popup .popup-layer {
+  position: absolute;
+  width: 30vw;
+  height: 42vw;
   background-color: #FFFAF0;
 }
 
@@ -523,10 +530,16 @@ span {
   margin-top: 0.7vw;
 }
 
+.popup-tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  height: 25%;
+}
+
 .popup h3 {
   font-size: clamp(15px, 1.4vw, 30px);
-  margin-top: 1.5vw;
-  margin-bottom: 0.5vw;
 }
 
 .popup-layer .hashtag p {
@@ -581,7 +594,7 @@ span {
   font-family: "Kaisei Opti";
   padding: 0.5vw 1vw;
   border-radius: 4vw;
-  margin: 2vw auto 0;
+  margin: 0 auto 3vw;
 }
 
 .map-bakery1 {
@@ -590,8 +603,8 @@ span {
 }
 
 .popup1 {
-  top: 10%;
-  right: 35%;
+  top: 0%;
+  right: 50%;
 }
 
 .map-bakery2 {
@@ -600,8 +613,8 @@ span {
 }
 
 .popup2 {
-  top: 25%;
-  right: 25%;
+  top: 40%;
+  right: 37%;
 }
 
 .map-bakery3 {
@@ -610,8 +623,8 @@ span {
 }
 
 .popup3 {
-  top: 25%;
-  right: 30%;
+  top: 40%;
+  right: 45%;
 }
 
 .map-bakery4 {
@@ -620,8 +633,8 @@ span {
 }
 
 .popup4 {
-  top: 25%;
-  right: 35%;
+  top: 50%;
+  right: 45%;
 }
 
 .map-bakery5 {
@@ -630,8 +643,8 @@ span {
 }
 
 .popup5 {
-  top: 10%;
-  right: 45%;
+  top: 0;
+  right: 60%;
 }
 
 .map-bakery6 {
@@ -640,8 +653,8 @@ span {
 }
 
 .popup6 {
-  top: 9.9%;
-  right: 47%;
+  top: 0;
+  right: 60%;
 }
 
 .map-bakery7 {
@@ -651,7 +664,7 @@ span {
 
 .popup7 {
   top: 20%;
-  left: 15%;
+  left: 25%;
 }
 
 .map-bakery8 {
@@ -660,8 +673,8 @@ span {
 }
 
 .popup8 {
-  top: 10%;
-  left: 15%;
+  top: 5%;
+  left: 25%;
 }
 
 .map-bakery9 {
@@ -670,8 +683,8 @@ span {
 }
 
 .popup9 {
-  top: 10%;
-  left: 15%;
+  top: 20%;
+  left: 20%;
 }
 
 .map-bakery10 {
@@ -680,8 +693,8 @@ span {
 }
 
 .popup10 {
-  bottom: 0;
-  left: 15%;
+  bottom: 50%;
+  left: 25%;
 }
 
 .map-bakery11 {
@@ -691,7 +704,7 @@ span {
 
 .popup11 {
   top: 10%;
-  left: 25%;
+  left: 30%;
 }
 
 .map-bakery12 {
@@ -700,8 +713,8 @@ span {
 }
 
 .popup12 {
-  top: 10%;
-  left: 25%;
+  top: 0;
+  left: 30%;
 }
 
 .map-bakery13 {
@@ -710,8 +723,8 @@ span {
 }
 
 .popup13 {
-  top: 10%;
-  left: 20%;
+  top: 15%;
+  left: 25%;
 }
 
 .map-bakery14 {
@@ -720,8 +733,8 @@ span {
 }
 
 .popup14 {
-  top: 10%;
-  left: 20%;
+  top: 20%;
+  left: 25%;
 }
 
 .map-bakery15 {
@@ -731,7 +744,7 @@ span {
 
 .popup15 {
   top: 0;
-  left: 20%;
+  left: 30%;
 }
 
 .map-bakery16 {
@@ -740,8 +753,8 @@ span {
 }
 
 .popup16 {
-  top: 10%;
-  left: 25%;
+  top: 5%;
+  left: 20%;
 }
 
 .map-bakery17 {
@@ -761,7 +774,7 @@ span {
 
 .popup18 {
   top: 10%;
-  left: 20%;
+  left: 15%;
 }
 
 .map-bakery19 {
@@ -770,7 +783,7 @@ span {
 }
 
 .popup19 {
-  top: 10%;
+  top: 0;
   left: 35%;
 }
 
@@ -2265,6 +2278,15 @@ span {
     padding-bottom: 3vw;
   }
 
+  .popup-layer {
+    position: relative;
+    width: 15vw;
+    min-width: 150px;
+    height: 21vw;
+    min-height: 210px;
+    background-color: #FFFAF0;
+  }
+
   .sp-popup .popup-layer {
     position: relative;
     width: 70vw;
@@ -2292,8 +2314,7 @@ span {
   }
   
   .sp-popup h3 {
-    font-size: clamp(10px, 6vw, 50px);
-    margin-top: 5vw;
+    font-size: clamp(10px, 5vw, 50px);
   }
   
   .sp-popup .hashtag p {
