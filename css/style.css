@@ -1578,16 +1578,33 @@ span {
   margin-top: 20px;
 }
 
-.near-park-grid img {
+.near-park-link {
+  display: inline-block;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
+}
+
+.near-park-link img {
   width: 40vw;
 }
+
+/* .near-park-name {
+  background-image: url(../img/park_under_arrow.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+} */
 
 .near-park-name p {
   position: relative;
   font-size: 3vw;
+  padding: 0 1vw 1.5vw;
 }
+
+
+/* .near-park-name:hover .near-park-name img {
+  transform: scale(1.2);
+} */
 
 .near-park-name p:before,
 .near-park-name p:after {
@@ -1595,9 +1612,10 @@ span {
   position: absolute;
   top: 120%;
   right: 0;
+  z-index: 1000000;
   height: 1px;
   background: #3B302A;
-  content: '';
+  content: 'hello';
   transition: all .3s;
 }
 
