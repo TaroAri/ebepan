@@ -1544,7 +1544,7 @@ span {
 .near-park-pickup {
   position: absolute;
   top: -10vw;
-  left: 0;
+  left: -6vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1594,11 +1594,12 @@ span {
   background-position: bottom;
   background-repeat: no-repeat;
 } */
-
+.near-park-name {
+  width: fit-content;
+}
 .near-park-name p {
   position: relative;
   font-size: 3vw;
-  padding: 0 1vw 1.5vw;
 }
 
 
@@ -1640,14 +1641,14 @@ span {
 
 
 
-/* .near-park-name p:hover::before {
+.near-park-name p:hover::before {
   width: 120%;
   right: -10%;
 }
 
 .near-park-name p:hover::after {
   right: -10%;
-} */
+}
 
 
 
@@ -2201,15 +2202,25 @@ span {
   }
 
   .near-park-grid {
-    display: block;
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr auto;
     width: 60vw;
+  }
+
+  .near-park-pickup {
+    top: 3vw;
+    left: -10vw;
+  }
+
+  .near-park-link {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .near-park-grid h3 {
     margin: 12vw 0 3vw;
   }
   .near-park-name p {
-    width: 15vw;
     margin: 5vw auto;
   }
 
