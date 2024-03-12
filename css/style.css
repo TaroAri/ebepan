@@ -1617,7 +1617,6 @@ span {
   height: 5px;
   background-color: #3B302A;
   content: 'hello';
-  transition: all .3s;
 }
 
 .near-park-name p:before {
