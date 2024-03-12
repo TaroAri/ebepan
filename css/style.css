@@ -1613,7 +1613,7 @@ span {
   top: 120%;
   right: 0;
   z-index: 1000000;
-  height: 1px;
+  height: 5px;
   background: #3B302A;
   content: 'hello';
   transition: all .3s;
