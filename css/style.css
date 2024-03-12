@@ -2340,7 +2340,7 @@ span {
   }
   
   .sp-popup h3 {
-    font-size: clamp(10px, 5vw, 50px);
+    font-size: clamp(10px, 5vw, 39px);
   }
   
   .sp-popup .hashtag p {
