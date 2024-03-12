@@ -1673,10 +1673,12 @@ span {
 
 .park4 {
   background-image: url(../img/park_first_view4.JPG);
+  background-position: 20%;
 }
 
 .park5 {
   background-image: url(../img/park_first_view5.jpg);
+  background-position: right bottom 20%;
 }
 
 .park6 {
@@ -1685,11 +1687,11 @@ span {
 
 .park7 {
   background-image: url(../img/park_first_view7.JPG);
+  background-position: 75%;
 }
 
 .park-first-view {
   background-size: cover;
-  background-position: center;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -2194,6 +2196,7 @@ span {
 
   .park-about-textarea {
     width: 60vw;
+    padding-bottom: 13vw;
   }
 
   #park-images {
