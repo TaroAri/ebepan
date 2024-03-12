@@ -1614,9 +1614,9 @@ span {
   right: 0;
   z-index: 1000000;
   width: 100%;
-  height: 5px;
+  height: 1px;
   background-color: #3B302A;
-  content: 'hello';
+  content: "";
   transition: all .3s;
 }
 
