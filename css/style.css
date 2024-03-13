@@ -156,7 +156,7 @@ span {
   -ms-transform: translateY(-50%);
   font-family: "craftmincho";
   font-size: clamp(10px, 2vw, 40px);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 2;
 } 
 
@@ -1455,10 +1455,10 @@ span {
 }
 
 .bakery-information-area {
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 80vw;
-  height: 50vw;
+  /* height: 50vw; */
   margin: 3vw auto 0;
   font-family: "Kaisei Opti";
 }
@@ -1511,6 +1511,10 @@ span {
 
 .bakery-border {
   border-bottom: #828282 1px solid;
+}
+
+.bakery-last {
+  padding-bottom: 10vw;
 }
 
 /*  near-park  */
@@ -2198,7 +2202,7 @@ span {
 
   .bakery-information-area {
     width: 90vw;
-    height: 70vw;
+    /* height: 60vw; */
     background-size: 100% 100%;
   }
 
