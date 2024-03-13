@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "Mamelon";
-  src: url(Mamelon.otf);
+  src: url(../fonts/Mamelon.woff);
 }
 
 @font-face {
   font-family: "craftmincho";
-  src: url(craftmincho.otf);
+  src: url(../fonts/craftmincho.woff);
 }
 
 @font-face {
   font-family: "Kaisei Opti";
-  src: url(KaiseiOpti.ttf);
+  src: url(../fonts/KaiseiOpti.woff);
 }
 
 
@@ -1003,6 +1003,7 @@ span {
   align-items: center;
   width: 33%;
   border: #3B302A 0.3vw solid;
+  overflow: hidden;
 }
 
 .red {
