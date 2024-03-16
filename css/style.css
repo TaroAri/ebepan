@@ -51,8 +51,13 @@ span {
 }
 
 .page_logo img {
-  width: 16vw;
-  min-width: 110px;
+  width: 10vw;
+  min-width: 100px;
+}
+
+.page_logo p {
+  font-size: 1vw;
+  margin-top: -0.5vw;
 }
 
 /*  global menu  */
@@ -414,7 +419,7 @@ span {
   height: auto;
 }
 
-.bakery h3 {
+.bakery h4 {
   margin-top: 1.5vw;
   font-size: clamp(14px, 3vw, 24px);
   line-height: 1.5;
@@ -608,8 +613,8 @@ span {
 }
 
 .map-bakery2 {
-  top: 55.9%;
-  left: 83.225%;
+  top: 54%;
+  left: 81.95%;
 }
 
 .popup2 {
@@ -628,8 +633,8 @@ span {
 }
 
 .map-bakery4 {
-  top: 64.5%;
-  left: 73.415%;
+  top: 64.4%;
+  left: 73.41%;
 }
 
 .popup4 {
@@ -638,8 +643,8 @@ span {
 }
 
 .map-bakery5 {
-  top: 10%;
-  left: 60.75%;
+  top: 13.25%;
+  left: 61.33%;
 }
 
 .popup5 {
@@ -648,8 +653,8 @@ span {
 }
 
 .map-bakery6 {
-  top: 10%;
-  left: 58.9%;
+  top: 12%;
+  left: 60.3%;
 }
 
 .popup6 {
@@ -658,8 +663,8 @@ span {
 }
 
 .map-bakery7 {
-  top: 38.7%;
-  left: 45.6%;
+  top: 38.5%;
+  left: 47.32%;
 }
 
 .popup7 {
@@ -669,7 +674,7 @@ span {
 
 .map-bakery8 {
   top: 20.2%;
-  left: 45.44%;
+  left: 45.85%;
 }
 
 .popup8 {
@@ -698,8 +703,8 @@ span {
 }
 
 .map-bakery11 {
-  top: 31.1%;
-  left: 52.23%;
+  top: 30.8%;
+  left: 53.28%;
 }
 
 .popup11 {
@@ -708,8 +713,8 @@ span {
 }
 
 .map-bakery12 {
-  top: 15.3%;
-  left: 50.3%;
+  top: 14.9%;
+  left: 52.37%;
 }
 
 .popup12 {
@@ -718,8 +723,8 @@ span {
 }
 
 .map-bakery13 {
-  top: 34.8%;
-  left: 46.28%;
+  top: 34.455%;
+  left: 46.8%;
 }
 
 .popup13 {
@@ -728,8 +733,8 @@ span {
 }
 
 .map-bakery14 {
-  top: 41.3%;
-  left: 46.68%;
+  top: 41%;
+  left: 48.47%;
 }
 
 .popup14 {
@@ -738,8 +743,8 @@ span {
 }
 
 .map-bakery15 {
-  top: 9.5%;
-  left: 51.3%;
+  top: 9.3%;
+  left: 52.94%;
 }
 
 .popup15 {
@@ -768,7 +773,7 @@ span {
 }
 
 .map-bakery18 {
-  top: 26.6%;
+  top: 25.5%;
   left: 7.89%;
 }
 
@@ -1458,7 +1463,6 @@ span {
   background-size: contain;
   background-repeat: no-repeat;
   width: 80vw;
-  /* height: 50vw; */
   margin: 3vw auto 0;
   font-family: "Kaisei Opti";
 }
@@ -1483,10 +1487,12 @@ span {
 .bakery-info-text-flex {
   display: flex;
   justify-content: left;
+  align-items: center;
   width: 70%;
   font-size: clamp(14px, 2vw, 40px);
   margin: 0 auto;
   padding: 0.5vw 0 0.5vw 2vw;
+  text-align: left;
 }
 
 .bakery-info-text-flex img {
@@ -1494,9 +1500,10 @@ span {
 }
 
 .bakery-info-text-flex p {
-  padding: 2px 0 0 5vw;
+  padding-top: 2px;
+  margin-left: 5vw;
 }
-
+ 
 .bakery-info-text-ebetsu:hover {
   color: #EB6951;
 }
@@ -1971,7 +1978,7 @@ span {
     z-index: 100;
     font-family: "craftmincho";
     font-size: clamp(20px, 3vw, 34px);
-    padding-top: clamp(130px, 17vw, 200px);
+    padding-top: clamp(130px, 14vw, 200px);
   }
   .hamburger-nav li {
     margin-bottom: 30px;
@@ -1985,10 +1992,9 @@ span {
   .openbtn{
     position:fixed;
     z-index: 1000;/*ボタンを最前面に*/
-    top:20px;
-    right: 20px;
-    cursor: pointer;
-    width: 10vw;
+    top:10px;
+    right: 10px;
+    width: 7vw;
     min-width: 60px;
   }
 
@@ -2000,6 +2006,7 @@ span {
     font-size: clamp(14px, 2vw, 23px);
     color: #000;
     font-weight: 100;
+    padding-left: 0.5vw;
   }
 
   .hamburger-text {
@@ -2328,15 +2335,15 @@ span {
   }
 
   .popup-ebetsu .popup-layer {
-    border: #EB6951 1vw solid;
+    border: #EB6951 0.5vw solid;
   }
   
   .popup-nopporo .popup-layer {
-    border: #F6B044 1vw solid;
+    border: #F6B044 0.5vw solid;
   }
   
   .popup-oasa .popup-layer {
-    border: #9DBDB9 1vw solid;
+    border: #9DBDB9 0.5vw solid;
   }
   
   
