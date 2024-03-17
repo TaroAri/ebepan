@@ -56,7 +56,7 @@ span {
 }
 
 .page_logo p {
-  font-size: 1vw;
+  font-size: clamp(10px, 1vw, 20px);
   margin-top: -0.5vw;
 }
 
@@ -216,21 +216,22 @@ span {
 }
 
 .fade-in-up {
-  transform: translate(0, 50px);
+  transform: translate(0, 100px);
 }
 
 .fade-in-left {
-  transform: translate(-50px, 0);
+  transform: translate(-100px, 0);
 }
 
 .fade-in-right {
-  transform: translate(50px, 0);
+  transform: translate(100px, 0);
 }
 
 .scroll-in {
   opacity: 1;
   transform: translate(0, 0);
 }
+
 
 /*-------------------------------------------------------------------
 
