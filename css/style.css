@@ -795,6 +795,7 @@ span {
 
 .map-bakery-small img {
   width: 1.5vw;
+  min-width: 13.2px;
 }
 
 .sp-popup {
@@ -2059,6 +2060,18 @@ span {
     height: 41vw;
   }
 
+  .map-bakery7 {
+    top: 37.5%;
+  }
+
+  .map-bakery13 {
+    top: 33.6%;
+  }
+
+  .map-bakery14 {
+    top: 40%;
+  }
+
 
   #near-bakery {
     width: 120vw;
@@ -2173,6 +2186,18 @@ span {
 
   .bakery img {
     margin-top: 2vw;
+  }
+
+  .map-bakery7 {
+    top: 37.5%;
+  }
+
+  .map-bakery13 {
+    top: 33.6%;
+  }
+
+  .map-bakery14 {
+    top: 39.4%;
   }
 
 
