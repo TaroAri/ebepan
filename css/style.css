@@ -152,7 +152,7 @@ span {
   text-align: left;
 }
 
-.footer p {
+.footer-cnt {
   position: absolute;
   top: 50%;
   left: 9%;
@@ -163,7 +163,12 @@ span {
   font-size: clamp(10px, 2vw, 40px);
   font-weight: 500;
   line-height: 2;
-} 
+}
+
+.footer-caution {
+  font-size: clamp(5px, 1.5vw, 30px);
+  margin-top: 3vw;
+}
 
 .top-botton {
   background-image: url(../img/tongs_open.png);
